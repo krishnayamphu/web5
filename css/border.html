@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        float: left;
+        margin: 15px;
+        background-color: pink;
+      }
+      .box1 {
+        border-style: solid;
+        border-width: 5px;
+        border-color: green;
+      }
+      .box2 {
+        border-style: dashed;
+        border-width: 5px;
+        border-color: green;
+      }
+      .box3 {
+        border: 10px groove green;
+      }
+      .box4 {
+        border-left: 10px groove green;
+      }
+      .box5 {
+        border: 10px groove green;
+        border-bottom: none;
+      }
+
+      .box6 {
+        border-top: 10px solid green;
+        border-right: 10px solid blue;
+        border-bottom: 10px solid red;
+        border-left: 10px solid yellow;
+      }
+
+      .box7 {
+        height: 0;
+        border-top: 10px solid green;
+        border-right: 10px solid blue;
+        border-bottom: 10px solid red;
+        border-left: 10px solid yellow;
+      }
+      .box8 {
+        height: 0;
+        width: 0;
+        border-top: 10px solid green;
+        border-right: 10px solid blue;
+        border-bottom: 10px solid red;
+        border-left: 10px solid yellow;
+      }
+      .box9 {
+        height: 0;
+        width: 0;
+        background-color: transparent;
+        border-top: 10px solid green;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-left: 10px solid transparent;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+    <div class="box6"></div>
+    <div class="box7"></div>
+    <div class="box8"></div>
+    <div class="box9"></div>
+  </body>
+</html>
