@@ -12,8 +12,9 @@
       }
       .container {
         background-color: whitesmoke;
-        width: 60%;
-        margin: 15px auto;
+        width: 460px;
+        margin: 60px auto;
+        border-radius: 10px;
       }
       .menubar {
         padding: 15px;
@@ -30,6 +31,8 @@
       }
       table {
         width: 100%;
+        font-size: 14px;
+        margin-bottom: 30px;
       }
       td {
         text-align: center;
@@ -46,6 +49,40 @@
         color: white;
         border-radius: 50%;
         padding: 5px;
+      }
+
+      .today {
+        background-color: #1d88e0;
+        padding: 15px;
+        border-radius: 0 0 10px 10px;
+        text-align: center;
+        color: white;
+      }
+      h2 {
+        margin: 0;
+        padding: 0;
+        padding-top: 30px;
+        font-size: 56px;
+      }
+      p {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 30px;
+      }
+      ul {
+        text-align: left;
+        font-size: 14px;
+        margin-left: 20%;
+        list-style: circle;
+      }
+      li {
+        padding: 5px 0;
+      }
+
+      .action-link {
+        float: right;
+        padding-right: 15px;
+        font-size: 30px;
       }
     </style>
   </head>
@@ -126,6 +163,19 @@
           </tr>
         </tbody>
       </table>
+
+      <div class="today">
+        <h2>02</h2>
+        <p>Monday</p>
+
+        <ul>
+          <li>Create Calendar UI</li>
+          <li>Buy Coffee</li>
+          <li>Get Gas</li>
+        </ul>
+        <div class="action-link">+</div>
+        <div style="clear: both; margin-bottom: 15px"></div>
+      </div>
     </div>
   </body>
 </html>
