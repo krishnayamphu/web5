@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css3</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        float: left;
+        margin: 15px;
+        border: 5px solid red;
+      }
+      .box1 {
+        transition-property: all;
+        transition-duration: 5s;
+        transition-timing-function: ease;
+        transition-delay: 0s;
+      }
+      .box1:hover {
+        border-radius: 40px 0;
+        background-color: green;
+      }
+      .box2 {
+        position: relative;
+        background-color: aqua;
+        top: 0;
+        transition: all 1s;
+      }
+      .box2:hover {
+        top: 50px;
+      }
+      .box3 {
+        transition: all 2s linear 0s;
+      }
+
+      .box3:hover {
+        border-radius: 50%;
+      }
+      .box4 {
+        transition: all 1s;
+      }
+      .box4:hover {
+        box-shadow: 0 0 5px 5px green;
+      }
+      h1 {
+        transition: all 1000ms;
+        clear: both;
+        text-align: center;
+      }
+
+      h1:hover {
+        font-size: 50px;
+        background-color: orangered;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+
+    <h1>Hello World</h1>
+  </body>
+</html>
