@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css3</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      div {
+        width: 90%;
+        height: 400px;
+        margin: 15px auto;
+        background-color: tomato;
+        background-image: url(a.png);
+        background-repeat: no-repeat;
+      }
+      .cover {
+        background-size: cover;
+      }
+      .contain {
+        background-size: contain;
+      }
+      .box3 {
+        background-size: 100% 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div>normal</div>
+    <div class="cover">cover</div>
+    <div class="contain">contain</div>
+    <div class="box3">box3</div>
+  </body>
+</html>
