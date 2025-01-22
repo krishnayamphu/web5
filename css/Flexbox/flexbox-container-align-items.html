@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      .row {
+        border: 2px solid red;
+        width: 300px;
+        margin: 15px auto;
+        display: flex;
+        height: 200px;
+      }
+      .col {
+        background-color: orange;
+      }
+      .col:nth-child(even) {
+        background-color: teal;
+        padding: 30px 15px;
+      }
+      .col:last-child {
+        width: 100px;
+        padding: 10px 0;
+      }
+      .stretch {
+        align-items: stretch;
+      }
+      .flex-start {
+        align-items: flex-start;
+      }
+      .center {
+        align-items: center;
+      }
+      .flex-end {
+        align-items: flex-end;
+      }
+      .baseline {
+        align-items: baseline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row stretch">
+      <div class="col">1</div>
+      <div class="col">hello</div>
+      <div class="col">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </div>
+    </div>
+    <div class="row flex-start">
+      <div class="col">1</div>
+      <div class="col">hello</div>
+      <div class="col">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </div>
+    </div>
+
+    <div class="row center">
+      <div class="col">1</div>
+      <div class="col">hello</div>
+      <div class="col">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </div>
+    </div>
+
+    <div class="row flex-end">
+      <div class="col">1</div>
+      <div class="col">hello</div>
+      <div class="col">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </div>
+    </div>
+
+    <div class="row baseline">
+      <div class="col">1</div>
+      <div class="col">hello</div>
+      <div class="col">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </div>
+    </div>
+  </body>
+</html>
