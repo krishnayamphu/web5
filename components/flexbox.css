@@ -1,0 +1,93 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-banner {
+  height: 100vh;
+  background-color: #171e40;
+  background-image: conic-gradient(
+      from 15deg at 40% 100%,
+      rgb(23, 30, 64, 0.1) 90deg,
+      rgb(23, 30, 64, 1) 90deg,
+      rgba(23, 30, 64, 1)
+    ),
+    url(bg-man-sitting.jpg);
+  background-size: cover;
+}
+
+nav {
+  width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .brand-logo {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+nav ul li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+  display: block;
+  padding: 10px;
+  margin: 20px 0;
+}
+nav ul li.current a {
+  color: white;
+}
+
+.btn-action {
+  background-color: #171e40;
+  border-radius: 25px;
+  padding: 8px 15px;
+  margin-left: 15px;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border: 2px solid #3a79f9;
+  letter-spacing: 0.4px;
+}
+
+.hero-content {
+  width: 1140px;
+  margin: 0 auto;
+  height: 88%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+.hero-content h1 {
+  font-size: 54px;
+  font-weight: 600;
+}
+.hero-content h1 span {
+  display: block;
+}
+.hero-banner p {
+  color: rgba(255, 255, 255, 0.5);
+  margin: 3rem 0;
+}
+
+.action-links a {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  padding: 15px 32px;
+  font-weight: bold;
+}
+.action-links a:first-child {
+  border: 2px solid #3a79f9;
+  border-radius: 25px;
+}
