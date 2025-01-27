@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css3</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 0;
+        margin: 0;
+      }
+      @keyframes changeBg {
+        from {
+          background-color: red;
+        }
+        to {
+          background-color: blue;
+        }
+      }
+      .box1 {
+        border: green 1px solid;
+        width: 100px;
+        height: 100px;
+        margin: 15px;
+        animation-name: changeBg;
+        animation-duration: 5s;
+        animation-timing-function: ease;
+        animation-delay: 0s;
+        animation-direction: normal;
+        animation-iteration-count: infinite;
+        animation-fill-mode: backwards;
+      }
+
+      @keyframes move {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(500px) rotate3d(0, 0, 1, 360deg);
+          border-radius: 50%;
+          background-color: transparent;
+          border: 2px solid orangered;
+        }
+      }
+
+      .box2 {
+        background-color: orangered;
+        width: 100px;
+        height: 100px;
+        margin: 15px;
+        animation: move 2s ease-in-out infinite alternate;
+      }
+
+      @keyframes shadow {
+        0% {
+          text-shadow: 0 0 5px blue;
+        }
+        50% {
+          text-shadow: 0 0 5px green;
+        }
+
+        100% {
+          text-shadow: 0 0 5px red;
+          font-size: 70px;
+        }
+      }
+
+      h1 {
+        text-align: center;
+        color: white;
+        animation: shadow 1s ease infinite alternate;
+      }
+
+      section {
+        position: relative;
+        perspective: 500px;
+        transform-style: preserve-3d;
+        margin: 30px;
+      }
+      @keyframes rotateY {
+        to {
+          transform: rotateX(360deg);
+        }
+      }
+      section div {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+      }
+      section div:first-child {
+        background-color: rgba(255, 0, 0, 0.849);
+        animation: rotateY 1s linear infinite;
+      }
+      section div:last-child {
+        background-color: rgba(4, 75, 15, 0.614);
+        animation: rotateY 10s linear infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1">box1</div>
+
+    <div class="box2"></div>
+
+    <section>
+      <div></div>
+      <div></div>
+    </section>
+
+    <h1>Hello World</h1>
+  </body>
+</html>
