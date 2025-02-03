@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css3</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      .box {
+        background-color: red;
+        height: 50px;
+        width: min(100%, 600px);
+        margin: 30px auto;
+      }
+
+      @media screen and (max-width: 400px) {
+        .box {
+          background-color: aqua;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">box</div>
+  </body>
+</html>

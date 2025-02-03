@@ -1,0 +1,94 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  margin-bottom: 15px;
+}
+p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+header {
+  background-color: pink;
+  text-align: center;
+  font-size: 24px;
+  text-align: center;
+  padding: 15px;
+}
+nav {
+  background-color: teal;
+  display: flex;
+  justify-content: center;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 8px 1rem;
+  transition: all 0.3s;
+}
+nav a:hover {
+  background-color: orange;
+  color: black;
+}
+main {
+  display: flex;
+  width: 1140px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+main section {
+  width: 70%;
+}
+main aside {
+  width: 30%;
+  padding: 0 30px;
+}
+aside h3 {
+  background-color: teal;
+  padding: 5px 15px;
+}
+aside ul {
+  list-style: none;
+}
+aside ul li {
+  border-bottom: 1px solid #ccc;
+}
+aside ul li a {
+  display: block;
+  text-decoration: none;
+  color: rgb(16, 104, 176);
+  padding: 5px 10px;
+}
+
+footer {
+  background-color: rgb(27, 27, 27);
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  main section {
+    width: 100%;
+    padding: 0 30px;
+  }
+  main aside {
+    width: 100%;
+    padding: 0 30px;
+  }
+}
