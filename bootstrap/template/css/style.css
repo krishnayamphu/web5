@@ -1,11 +1,20 @@
 /* custom css */
+.raleway {
+  font-family: "Raleway", serif;
+}
 :root {
   --primary-color: #ff551a;
+}
+body {
+  color: #333333;
 }
 
 /* bs override */
 .bg-primary {
   background-color: var(--primary-color) !important;
+}
+.text-primary {
+  color: var(--primary-color) !important;
 }
 
 /* .site-header */
@@ -38,4 +47,126 @@ nav ul li::before {
 }
 nav ul li:hover::before {
   transform: scale(1);
+}
+
+/* .hero-banner */
+.hero-banner {
+  height: calc(100vh - 156px);
+  /* overflow: hidden !important; */
+}
+.hero-banner img {
+  height: calc(100vh - 156px);
+  object-fit: cover;
+}
+.hero-content h1 {
+  font-size: 60px;
+}
+.hero-content p {
+  font-size: 20px;
+}
+.hero-content a {
+  transition: all 0.5s;
+}
+.hero-content a:hover {
+  background-color: white !important;
+  color: var(--primary-color);
+}
+.hero-content h4 {
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+.appointment-form {
+  right: 2%;
+  background-color: rgba(0, 0, 0, 0.682);
+  color: white;
+  z-index: 3;
+  bottom: 0%;
+}
+.appointment-form h3 {
+  font-size: 18px;
+}
+.appointment-form input {
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 10px;
+}
+.appointment-form textarea {
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 10px;
+}
+.appointment-form input::placeholder,
+.appointment-form textarea::placeholder {
+  color: white;
+}
+
+.welcome {
+  padding: 100px 0;
+  z-index: 5;
+}
+.welcome h2 {
+  font-family: "Raleway", serif;
+  font-size: 45px;
+  font-weight: 700;
+}
+.welcome p {
+  font-size: 15px;
+  line-height: 30px;
+  width: 73%;
+  margin: 40px auto 55px auto;
+}
+
+.seperator {
+  border-bottom: 1px solid #333333;
+  width: 200px;
+  position: relative;
+  margin: 15px auto;
+}
+.seperator::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 2px;
+  height: 20px;
+  background-color: var(--primary-color);
+  top: -10px;
+}
+.showcase-item {
+  gap: 80px;
+}
+.showcase-item .card {
+  border: none;
+  text-align: center;
+  background-color: transparent;
+}
+.showcase-item span {
+  display: block;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 30px 0;
+  background-color: transparent;
+}
+.showcase-item span::before {
+  content: "";
+  position: absolute;
+  border: 1px solid var(--primary-color);
+  width: 80px;
+  height: 80px;
+  z-index: -1;
+  transition: all 0.5s;
+}
+.showcase-item span:hover::before {
+  background-color: var(--primary-color);
+  transform: rotate(45deg);
+}
+
+.showcase-item span i {
+  font-size: 40px;
+  color: var(--primary-color);
+}
+.showcase-item span:hover i {
+  color: white !important;
 }
