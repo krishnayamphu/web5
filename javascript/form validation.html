@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <form name="myform" onsubmit="return valid()">
+      <p id="err"></p>
+      <input type="text" id="username" name="username" placeholder="Username" />
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Password"
+      />
+      <button>Login</button>
+    </form>
+    <script>
+      function valid() {
+        let username = document.getElementById("username").value;
+        let password = document.forms["myform"].password.value;
+        if (username == "") {
+          document.getElementById("err").innerHTML = "Username is required";
+          document.getElementById("username").focus();
+          return false;
+        } else if (password == "") {
+          document.getElementById("err").innerHTML = "Password is required";
+          document.getElementById("password").focus();
+          return false;
+        } else if (username == "admin" && password == "a123") {
+          alert("Login success");
+          return true;
+        } else {
+          document.getElementById("err").innerHTML =
+            "Invalid username or password";
+          return false;
+        }
+      }
+    </script>
+  </body>
+</html>
