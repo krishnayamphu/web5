@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <script>
+      const time = new Date();
+      let day = time.getDay() + 1; //0-6
+      let d = time.getDate();
+      let mo = time.getMonth() + 1; //0-11
+      let y = time.getFullYear();
+
+      let h = time.getHours();
+      //   if (h > 12) h = h - 12;
+      let mi = time.getMinutes();
+      let s = time.getSeconds();
+      let ms = time.getMilliseconds();
+
+      document.write(time);
+      document.write("<br>" + day + ", " + d + "-" + mo + "-" + y);
+      document.write("<br>" + h + ":" + mi + ":" + s + ":" + ms);
+    </script>
+  </body>
+</html>
