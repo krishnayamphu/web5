@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jquery</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      p {
+        padding: 10px;
+        line-height: 1.6;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="btn1">Apply Css</button>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus alias
+      doloribus impedit sequi perspiciatis harum magnam voluptatem, nam corrupti
+      velit consequatur unde eius. Quisquam vitae aliquid eos expedita dolor!
+      Cupiditate!
+    </p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#btn1").click(function () {
+          $("p").css({
+            "background-color": "pink",
+            border: "1px solid red",
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
