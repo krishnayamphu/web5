@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jquery</title>
+    <style>
+      p {
+        border: 1px solid #333;
+        background-color: pink;
+        padding: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="btn1">Set Text</button>
+    <button id="btn2">Get Text</button>
+    <p>
+      <strong>Lorem</strong> ipsum dolor sit amet consectetur adipisicing elit.
+      Quaerat, placeat laboriosam culpa deleniti voluptatem quidem nemo dolore
+      ipsum illum. Eaque incidunt tempore <del>obcaecati</del>, sequi iusto
+      laborum sit atque a consectetur.
+    </p>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#btn1").click(function () {
+          $("p").text("Hello World");
+        });
+
+        $("#btn2").click(function () {
+          alert($("p").text());
+        });
+      });
+    </script>
+  </body>
+</html>

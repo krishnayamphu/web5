@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jquery</title>
+    <link rel="stylesheet" href="product.css" />
+  </head>
+  <body>
+    <form action="#">
+      <input type="text" placeholder="Product Name" value="Apple" />
+      <input
+        type="number"
+        id="price"
+        min="0"
+        max="999999"
+        placeholder="Product Price"
+      />
+      <input
+        type="number"
+        id="qty"
+        value="1"
+        min="1"
+        max="100"
+        placeholder="Product Quantity"
+      />
+      <input type="text" id="total" placeholder="Total" />
+    </form>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#price").on("input", function () {
+          var price = $("#price").val();
+          var qty = $("#qty").val();
+          var total = price * qty;
+          $("#total").val(total);
+        });
+
+        $("#qty").on("input", function () {
+          var price = $("#price").val();
+          var qty = $("#qty").val();
+          var total = price * qty;
+          $("#total").val(total);
+        });
+      });
+    </script>
+  </body>
+</html>

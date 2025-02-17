@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jquery</title>
+    <style>
+      .box {
+        width: 200px;
+        height: 100px;
+        background-color: red;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="btn1">width</button>
+    <button id="btn2">height</button>
+    <div class="box"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#btn1").click(function () {
+          let w = $(".box").width();
+          alert(w);
+        });
+
+        $("#btn2").click(function () {
+          let h = $(".box").height();
+          alert(h);
+        });
+      });
+    </script>
+  </body>
+</html>
